@@ -1,0 +1,28 @@
+name: Bug report
+description: Report a reproducible problem in a local tool or the interface.
+title: "bug: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Thank you for helping make DeveloperHub more dependable. Do not include private tokens, passwords, or customer data."
+  - type: input
+    id: tool
+    attributes:
+      label: Tool or area
+      placeholder: JSON Workbench
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      placeholder: Describe the smallest safe input and steps that reproduce the result.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true

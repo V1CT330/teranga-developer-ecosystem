@@ -1,0 +1,19 @@
+name: Feature request
+description: Propose a useful, local-first developer workflow.
+title: "feature: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Workflow problem
+      description: Explain the routine work that should become faster or clearer.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the smallest privacy-conscious feature that would help.
+    validations:
+      required: true
